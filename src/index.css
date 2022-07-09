@@ -25,18 +25,21 @@ html, div {
   top: 0;
   bottom: 0;
   left: 0;
-  z-index: 100; /* Behind the navbar */
+  z-index: 100;
+  /* Behind the navbar */
   padding: 0;
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
 }
 
 .sidebar-sticky {
   position: absolute;
-  top: 50px; /* Height of navbar */
+  top: 50px;
+  /* Height of navbar */
   height: calc(100vh - 50px);
   padding-top: .5rem;
   overflow-x: hidden;
-  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  overflow-y: auto;
+  /* Scrollable contents if viewport is shorter than content. */
 }
 
 .sidebar .nav-link {
@@ -103,8 +106,13 @@ html, div {
  * Utilities
  */
 
-.border-top { border-top: 1px solid #e5e5e5; }
-.border-bottom { border-bottom: 1px solid #e5e5e5; }
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
 
 /* copyright styling */
 .copyright {
@@ -149,12 +157,19 @@ html, div {
   color: #222364;
 }
 
-@media (min-height: 900px) {
-  .copyright { 
-    position: fixed;
-    bottom: 0;
-    text-align: center;
-    border-right: 2px solid #7F7FAA;
-  }
-  
+.copyright {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  border-right: 2px solid #7F7FAA;
+}
+
+.input {
+  background-color: none;
+  color: none;
+}
+
+/* this hides the default input/file upload so that we can attach this functionality to a custom label and make it pretty */
+input[type="file"] {
+  display: none;
 }

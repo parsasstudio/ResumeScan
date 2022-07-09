@@ -16,7 +16,7 @@ export function Home() {
       </div>
 
       {/* Get Started Now Text */}
-      <div className="flex text-center pt-5 pb-5 border-bottom-1 font-face dark-purple-font fs-5">Get started now. <br /> 1) Upload your resume<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div className="flex text-center pt-5 pb-5 border-bottom-1 font-face dark-purple-font fs-5"><p className="fw-bold mb-0">Get started now. </p><br /> 1) Upload your resume<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M28.9125 10.4625L21.0375 2.5875C20.8125 2.3625 20.5875 2.25 20.25 2.25H9C7.7625 2.25 6.75 3.2625 6.75 4.5V31.5C6.75 32.7375 7.7625 33.75 9 33.75H27C28.2375 33.75 29.25 32.7375 29.25 31.5V11.25C29.25 10.9125 29.1375 10.6875 28.9125 10.4625ZM20.25 4.95L26.55 11.25H20.25V4.95ZM27 31.5H9V4.5H18V11.25C18 12.4875 19.0125 13.5 20.25 13.5H27V31.5Z" fill="#222364" />
         <path d="M11.25 24.75H24.75V27H11.25V24.75ZM11.25 18H24.75V20.25H11.25V18Z" fill="#222364" />
       </svg><br />  2) Try searching some keywords and see what happens!</div>

@@ -1,7 +1,11 @@
 import react from 'react';
+import SubmitComponent from './SubmitComponent';
 
 
 export function ResumeUpload() {
+    // onChange() {
+
+    // }
     return (
         <>
             {/* Resume Upload Component */}
@@ -11,7 +15,12 @@ export function ResumeUpload() {
                     <path d="M59.4287 26.8579C56.0742 18.0103 47.5269 11.7188 37.5146 11.7188C27.5024 11.7188 18.9551 18.0029 15.6006 26.8506C9.32373 28.4985 4.6875 34.2187 4.6875 41.0156C4.6875 49.1089 11.2427 55.6641 19.3286 55.6641H22.2656C22.5879 55.6641 22.8516 55.4004 22.8516 55.0781V50.6836C22.8516 50.3613 22.5879 50.0977 22.2656 50.0977H19.3286C16.8604 50.0977 14.5386 49.1162 12.8101 47.3364C11.0889 45.564 10.1733 43.1763 10.2539 40.7007C10.3198 38.7671 10.979 36.9507 12.1729 35.4199C13.396 33.8599 15.1099 32.7246 17.0142 32.2192L19.79 31.4941L20.8081 28.8135C21.438 27.1436 22.3169 25.5835 23.4229 24.1699C24.5147 22.7689 25.808 21.5372 27.2607 20.5151C30.271 18.3984 33.8159 17.2778 37.5146 17.2778C41.2134 17.2778 44.7583 18.3984 47.7686 20.5151C49.2261 21.5405 50.5151 22.771 51.6064 24.1699C52.7124 25.5835 53.5913 27.1509 54.2212 28.8135L55.2319 31.4868L58.0005 32.2192C61.9702 33.2886 64.7461 36.8994 64.7461 41.0156C64.7461 43.4399 63.8013 45.7251 62.0874 47.439C61.2469 48.2844 60.247 48.9547 59.1457 49.411C58.0444 49.8674 56.8635 50.1008 55.6714 50.0977H52.7344C52.4121 50.0977 52.1484 50.3613 52.1484 50.6836V55.0781C52.1484 55.4004 52.4121 55.6641 52.7344 55.6641H55.6714C63.7573 55.6641 70.3125 49.1089 70.3125 41.0156C70.3125 34.2261 65.6909 28.5132 59.4287 26.8579Z" fill="#222364" />
                 </svg>
             </div>
-            <div className="flex text-center pb-5 border-bottom-1 font-face dark-purple-font purple-border-bottom fs-4 purple-hover">Upload your resume(s)</div>
+
+            
+            <div className="flex text-center pb-5 border-bottom-1 font-face dark-purple-font purple-border-bottom fs-5 purple-hover">
+                <label htmlFor="file-upload">Upload your resume(s)</label>
+            </div>
+            <SubmitComponent />
             {/* Resume Upload Component End */}
 
             {/* Resume Display Header */}
@@ -26,7 +35,7 @@ export function ResumeUpload() {
                 <div className="dark-purple-hover font-face medium-purple-font fw-bold">DELETE</div>
             </div>
             {/* Resume Display Component End */}
-            
+
             {/* Resume Display Component */}
             <div className="flex text-center pb-4 t-5">
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">

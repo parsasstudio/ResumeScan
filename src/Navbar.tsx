@@ -1,21 +1,41 @@
 import React from 'react';
-
+import JsonData from './MOCK_DATA.json'
+import { useState } from 'react'
 
 export function Navbar() {
+  const [searchTerm, setSearchTerm] = useState('')
   return (
     <>
       <nav className="navbar sticky-top flex-md-nowrap p-0 font-face medium-purple-bg">
-        <a className="navbar-brand col-sm-2 col-md-1 light-purple-font" href="/">Home</a>
-        <a className="navbar-brand col-sm-2 col-md-1 light-purple-font" href="/resume-upload">Upload Resume</a>
-        <form action="search.php" method="POST" className="w-100">
-          <input className="form-control form-control-dark medium-purple-font" type="text" placeholder="Search" />
-        </form>
+        <a className="navbar-brand flex light-purple-font" href="/">Home</a>
+        <a className="navbar-brand flex light-purple-font" href="/resume-upload">Upload Resume</a>
+        <input className="form-control" type="text" placeholder="Search" onChange={event => { setSearchTerm(event.target.value) }} />
         <ul className="navbar-nav px-3">
           <li className="nav-item text-nowrap">
             <a className="nav-link light-purple-font" href="/about">ResumeScan&copy;</a>
           </li>
         </ul>
       </nav>
+
+      <div className="m-3 flex text-center">
+        {
+          JsonData.filter((data) => {
+            if (searchTerm == "") {
+              return ""
+            } else if (data.first_name.toLowerCase().includes(searchTerm.toLowerCase())) {
+              return data
+            }
+          }).map((data, key) => {
+            return (
+              <div className="user" key={key}>
+                <p className="purple-hover font-face fw-light fs-5">{data.first_name}</p>
+              </div>
+            )
+          })
+        }
+      </div>
     </>
-  );
+  )
 }
+
+
